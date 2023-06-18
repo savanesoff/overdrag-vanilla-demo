@@ -2,6 +2,8 @@ by: `Protosus`
 
 # `Overdrag` vanilla JS demo
 
+![Validator](https://savanesoff.github.io/overdrag-vanilla-demo/assets/overdrag-npm-demo-animation-take1-63e16fc8.gif)
+
 A simple demo application hosted by `GitHub Pages` aims to demonstrate abilities and interactions of [Overdrag](https://www.npmjs.com/package/overdrag) NPM package.
 
 You can view a live demo [here](https://savanesoff.github.io/overdrag-vanilla-demo/)
