@@ -6,12 +6,16 @@
   "description": "A simple demo application hosted by GitHub Pages that aims to demonstrate abilities and interactions of Overdrag NPM package.",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build --base=./",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "overdrag": "^0.2.1"
+  }
 }
