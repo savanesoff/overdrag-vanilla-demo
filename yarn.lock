@@ -349,10 +349,10 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
-overdrag@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/overdrag/-/overdrag-0.2.1.tgz#9111fc5d436bff1370caa29f3d06045442d129aa"
-  integrity sha512-U9MgRiB9OpO5sMrAV+Q7ghO3fQyT7/wlbAEHx7+I6pO+MMEO1Me3j6kGJsSSRZ636ABHgVSqKDqnJ2JG9QLzEQ==
+overdrag@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/overdrag/-/overdrag-0.2.3.tgz#a4a24ff8e1decd45367c5a4c3aee044bfacb2925"
+  integrity sha512-L57Hej/YFfSkqeOGg3zC6S92P9ogRFIrEmWKxGLvtFA/UtawcDGOFbRs5Ehg9YlBQf9vyhnUlhrVVimpDGcqEQ==
   dependencies:
     eventemitter3 "^5.0.1"
 

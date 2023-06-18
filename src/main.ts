@@ -1,4 +1,4 @@
-import Overdrag from "../../overdrag/src/";
+import Overdrag from "overdrag";
 import "./style.css";
 
 const overdragTargets = document.querySelectorAll(
