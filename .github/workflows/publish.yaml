@@ -23,7 +23,6 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
       - name: Deploy
-        with:
-          deploy: pnpm run deploy
+        run: pnpm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
