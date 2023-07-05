@@ -22,7 +22,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #app {
@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 
-#overdrag-container {
+.overdrag-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,8 +72,8 @@ body {
   writing-mode: vertical-rl;
   width: var(--ctrl-size);
   height: calc(100% + 2rem);
-  right: -1rem;
-  top: -1rem;
+  right: 0rem;
+  top: 0rem;
 }
 
 [data-overdrag-controls~="left"]:after {
@@ -81,56 +81,56 @@ body {
   writing-mode: vertical-rl;
   height: calc(100% + 2rem);
   width: var(--ctrl-size);
-  left: -1rem;
-  top: -1rem;
+  left: 0rem;
+  top: 0rem;
 }
 
 [data-overdrag-controls~="top"]:after {
   content: "resize ↕";
   height: var(--ctrl-size);
   width: calc(100% + 2rem);
-  left: -1rem;
-  top: -1rem;
+  left: 0rem;
+  top: 0rem;
 }
 
 [data-overdrag-controls~="bottom"]:after {
   content: "resize ↕";
   height: var(--ctrl-size);
   width: calc(100% + 2rem);
-  left: -1rem;
-  bottom: -1rem;
+  left: 0rem;
+  bottom: 0rem;
 }
 
 [data-overdrag-controls~="right-top"]:after {
   content: "↗";
   width: var(--ctrl-size);
   height: var(--ctrl-size);
-  right: -1rem;
-  top: -1rem;
+  right: 0rem;
+  top: 0rem;
 }
 
 [data-overdrag-controls~="left-top"]:after {
   content: "↖";
   width: var(--ctrl-size);
   height: var(--ctrl-size);
-  left: -1rem;
-  top: -1rem;
+  left: 0rem;
+  top: 0rem;
 }
 
 [data-overdrag-controls~="right-bottom"]:after {
   content: "↘";
   width: var(--ctrl-size);
   height: var(--ctrl-size);
-  right: -1rem;
-  bottom: -1rem;
+  right: 0rem;
+  bottom: 0rem;
 }
 
 [data-overdrag-controls~="left-bottom"]:after {
   content: "↙";
   width: var(--ctrl-size);
   height: var(--ctrl-size);
-  left: -1rem;
-  bottom: -1rem;
+  left: 0rem;
+  bottom: 0rem;
 }
 
 [overdrag-down="true"] {
@@ -158,7 +158,7 @@ body {
   position: absolute;
   font-size: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
-
+  overflow: hidden;
   .data {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

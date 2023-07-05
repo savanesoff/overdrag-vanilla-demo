@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc && vite build --base=./",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
@@ -17,6 +17,6 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "overdrag": "^0.2.3"
+    "overdrag": "^1.0.1"
   }
 }

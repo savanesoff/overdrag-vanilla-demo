@@ -7,7 +7,14 @@ const overdragTargets = document.querySelectorAll(
 
 // assign overdrag to each element
 overdragTargets.forEach((element) => {
-  const overdrag = new Overdrag({ element });
+  const props = (function () {
+    try {
+      return JSON.parse(element.getAttribute("data-props") || "");
+    } catch (e) {
+      return {};
+    }
+  })();
+  const overdrag = new Overdrag({ element, ...props });
   // @ts-ignore
   // this is a simple matter of adding a data element to the element as a shortcut
   overdrag.element.data = overdrag.element.querySelector(".data");
@@ -28,10 +35,10 @@ function onUpdate(instance: Overdrag) {
     ${getValue("over", instance.over.toString())}
     ${getValue("down", instance.down.toString())} 
     ${getValue("resizing", instance.resizing.toString())} 
-    ${getValue("top", instance.position.rect.top.toString())}
-    ${getValue("left", instance.position.rect.left.toString())}  
-    ${getValue("width", instance.position.box.width.toString())}
-    ${getValue("height", instance.position.box.height.toString())}  
+    ${getValue("top", instance.position.visualBounds.top.toString())}
+    ${getValue("left", instance.position.visualBounds.left.toString())}  
+    ${getValue("width", instance.position.width.toString())}
+    ${getValue("height", instance.position.height.toString())}  
     ${getValue(
       "control",
       instance.element.getAttribute(Overdrag.ATTRIBUTES.CONTROLS) || ""
