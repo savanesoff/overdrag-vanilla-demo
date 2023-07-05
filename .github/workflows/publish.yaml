@@ -24,6 +24,7 @@ jobs:
       - run: pnpm run build
       - name: Deploy
         uses: actions/deploy-pages@v2
-        run: pnpm run deploy
+        with:
+          deploy: pnpm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
